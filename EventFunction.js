@@ -7,7 +7,7 @@ function Login() {
   localStorage.setItem("CurrentAccount", Username);
 
   if (Username === "admin" && Password === "admin") {
-    window.location.href = "adminhomepage/adminhomepage.html";
+    window.location.href = "adminhomepage.html";
     alert("Logged in successfully");
     found = true;
   } else if (localStorage.getItem("Account")) {
@@ -15,7 +15,7 @@ function Login() {
     for (let i = 0; i < AccountArray.length; i++) {
       let Array = AccountArray[i].split(",");
       if (Array[0] === Username && Array[1] === Password) {
-        window.location.href = "homepage/homePage.html";
+        window.location.href = "homePage.html";
         alert("Logged in successfully");
         found = true;
       }
@@ -72,11 +72,11 @@ function Register() {
 }
 
 function logOut() {
-  window.location.replace("../loginpage/login.html");
+  window.location.replace("login.html");
 }
 
 function logOutHomePage() {
-  window.location.replace("loginpage/login.html");
+  window.location.replace("login.html");
 }
 
 function add() {
@@ -127,5 +127,5 @@ function remove() {
 }
 
 function toHomepage() {
-  window.location.replace("homepage/homePage.html");
+  window.location.replace("homePage.html");
 }
