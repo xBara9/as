@@ -1,0 +1,19 @@
+button {
+  color: black;
+  font-size: 20px;
+}
+body {
+  color: Black;
+  background-color: #a9a9a9;
+  text-align: center;
+}
+section {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+}
+#register {
+  display: none;
+}
